@@ -12,31 +12,18 @@
         layout="@layout/layout_header"/>
 
     <Button
-        android:id="@+id/buttonNature"
+        android:id="@+id/groupInfo"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Nature"/>
+        android:text="Groupe d'étudiants"/>
+
     <Button
-        android:id="@+id/buttonEspace"
-        android:layout_marginTop="40dp"
+        android:id="@+id/categorieProduit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Espace"/>
-    <Button
-        android:id="@+id/buttonStudents"
         android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Students"/>
-    <Button
-        android:id="@+id/buttonStudentsWS"
-        android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Students WS"/>
+        android:text="Catégories des produits" />
 </LinearLayout>

@@ -21,12 +21,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         setTitle("Home");
-        findViewById(R.id.buttonNature).setOnClickListener(this);
-        findViewById(R.id.buttonEspace).setOnClickListener(this);
-        findViewById(R.id.buttonStudents).setOnClickListener(this);
-        findViewById(R.id.buttonStudentsWS).setOnClickListener(this);
-
+        findViewById(R.id.groupInfo).setOnClickListener(this);
+        findViewById(R.id.categorieProduit).setOnClickListener(this);
     }
+
 
     @Override
     public void onClick(View v) {
