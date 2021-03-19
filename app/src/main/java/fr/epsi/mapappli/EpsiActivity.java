@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class EpsiActivity extends AppCompatActivity {
+public abstract class EpsiActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,4 +43,5 @@ public class EpsiActivity extends AppCompatActivity {
             textView.setText(title);
         }
     }
+
 }

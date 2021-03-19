@@ -12,11 +12,27 @@
         layout="@layout/layout_header"/>
 
     <Button
-        android:id="@+id/groupInfo"
+        android:id="@+id/bouttonTom"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Groupe d'étudiants"/>
+        android:text="TOM"/>
+
+    <Button
+        android:id="@+id/bouttonJordan"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="JORDAN"/>
+
+    <Button
+        android:id="@+id/bouttonPaul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="PAUL" />
 
 </LinearLayout>
