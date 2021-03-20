@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MapAppli</string>
+    <string name="url">Epsi : <a href="https://www.epsi.fr">https://www.epsi.fr</a></string>
 </resources>

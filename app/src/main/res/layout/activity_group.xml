@@ -5,11 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/md_blue_grey_200"
     tools:context=".GroupActivity">
     <include
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         layout="@layout/layout_header"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Afficher les informations de : " />
 
     <Button
         android:id="@+id/bouttonTom"
@@ -25,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
         android:text="JORDAN"/>
 
     <Button
