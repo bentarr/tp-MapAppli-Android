@@ -1,5 +1,6 @@
 package fr.epsi.mapappli;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -34,20 +35,23 @@ public class GroupActivity extends EpsiActivity implements View.OnClickListener 
 
 
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.bouttonJordan:
-                getIntent().putExtra("Students", this.Jordan);
-                startActivity(getIntent());
-                break;
+        Context activity = getApplicationContext();
+        Intent intent = new Intent(activity, ProfilActivity.class);
 
+        switch (v.getId()){
             case R.id.bouttonTom:
                 getIntent().putExtra("Students", this.Tom);
-                startActivity(getIntent());
+                startActivity(intent);
+                break;
+
+            case R.id.bouttonJordan:
+                getIntent().putExtra("Students", this.Jordan);
+                startActivity(intent);
                 break;
 
             case R.id.bouttonPaul:
                 getIntent().putExtra("Students", this.Paul);
-                startActivity(getIntent());
+                startActivity(intent);
                 break;
         }
     }
