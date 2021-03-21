@@ -16,9 +16,9 @@ public class GroupActivity extends EpsiActivity implements View.OnClickListener 
     }
 
 
-    public Students Tom = new Students("photo1", "Tom Bazats", "tom.bazats@epsi.fr", "Groupe 2");
-    public Students Jordan = new Students("photo2", "Jordan Leston", "jordan.leston@epsi.fr", "Groupe 2");
-    public Students Paul = new Students("photo3", "Paul Bénétier", "paul.benetier@epsi.fr", "Groupe 2");
+    public Students Tom = new Students("Tom Bazats", "photo1", "tom.bazats@epsi.fr", "Groupe 2");
+    public Students Jordan = new Students("Jordan Leston", "dgtbdz", "jordan.leston@epsi.fr", "Groupe 2");
+    public Students Paul = new Students("Paul Bénétier", "ddsdscez", "paul.benetier@epsi.fr", "Groupe 2");
 
 
 
@@ -30,6 +30,7 @@ public class GroupActivity extends EpsiActivity implements View.OnClickListener 
         showBack();
 
         findViewById(R.id.bouttonTom).setOnClickListener(this);
+        findViewById(R.id.bouttonJordan).setOnClickListener(this);
         findViewById(R.id.bouttonPaul).setOnClickListener(this);
     }
 
@@ -40,20 +41,19 @@ public class GroupActivity extends EpsiActivity implements View.OnClickListener 
 
         switch (v.getId()){
             case R.id.bouttonTom:
-                getIntent().putExtra("Students", this.Tom);
+                intent.putExtra("Students", this.Tom);
                 startActivity(intent);
                 break;
 
             case R.id.bouttonJordan:
-                getIntent().putExtra("Students", this.Jordan);
+                intent.putExtra("Students", this.Jordan);
                 startActivity(intent);
                 break;
 
             case R.id.bouttonPaul:
-                getIntent().putExtra("Students", this.Paul);
+                intent.putExtra("Students", this.Paul);
                 startActivity(intent);
                 break;
         }
     }
-
 }
