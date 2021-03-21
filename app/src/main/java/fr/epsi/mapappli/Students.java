@@ -20,6 +20,5 @@ public class Students implements Serializable {
     public String getPicture (){return this.Picture;}
     public String getMail (){return this.Mail;}
     public String getGroup(){return this.Group;}
-    
 
 }
