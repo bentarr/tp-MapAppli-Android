@@ -23,17 +23,19 @@
 
             <ImageView
                 android:id="@+id/Picture"
+                android:layout_marginTop="40dp"
                 android:layout_centerInParent="true"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:adjustViewBounds="true"
-                android:src="@drawable/epsi_logo"
+                android:src="@drawable/icon"
                 />
 
 
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="Info de l'étudiant :"
@@ -41,18 +43,21 @@
             <TextView
                 android:id="@+id/Name"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 />
             <TextView
                 android:id="@+id/Mail"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 />
             <TextView
                 android:id="@+id/Group"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 />
@@ -60,6 +65,7 @@
                 android:id="@+id/url"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
                 android:layout_gravity="center_horizontal"
                 android:autoLink="web"
                 android:linksClickable="true"
