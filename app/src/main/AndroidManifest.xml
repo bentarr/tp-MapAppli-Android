@@ -12,6 +12,7 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".GroupActivity" />
         <activity android:name=".ProfilActivity"/>
+        <activity android:name=".RayonActivity"/>
         <activity android:name=".EpsiActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

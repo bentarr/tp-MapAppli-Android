@@ -32,6 +32,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.groupInfo:
                 GroupActivity.displayActivity(this);
                 break;
+            case R.id.categorieProduit:
+                RayonActivity.displayActivity(this,"name", "url");
+                break;
         }
     }
 }
