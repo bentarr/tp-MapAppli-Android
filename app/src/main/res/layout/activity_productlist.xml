@@ -5,37 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <include
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".RayonActivity">
+        android:layout_height="wrap_content"
+        layout="@layout/layout_header"/>
 
-        <RelativeLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@android:color/holo_red_light">
+            android:layout_height="match_parent"
+            tools:context=".RayonActivity">
+        </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imageViewBack"
-                android:layout_width="25dp"
-                android:layout_height="18dp"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="5dp"
-                android:src="@drawable/back_arrow" />
-            <TextView
-                android:id="@+id/textViewTitle"
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:text="Nom de la catégorie"
-                android:textSize="24sp"
-                android:textColor="@android:color/white"/>
-        </RelativeLayout>
-
-
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
