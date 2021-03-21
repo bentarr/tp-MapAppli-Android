@@ -1,6 +1,8 @@
 package fr.epsi.mapappli;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ProfilActivity extends EpsiActivity {
