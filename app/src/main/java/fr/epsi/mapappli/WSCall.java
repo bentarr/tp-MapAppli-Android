@@ -65,3 +65,26 @@ public class WSCall {
         });
     }
 
+    private static String convertStreamToString(InputStream is){
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
+
+            StringBuilder stringBuffer = new StringBuilder("");
+            String line;
+
+            String NL = System.getProperty("line.separator");
+            while ((line = bufferedReader.readLine()) != null)
+            {
+                stringBuffer.append(line).append(NL);
+            }
+            bufferedReader.close();
+            return stringBuffer.toString();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+}
+
+
