@@ -9,9 +9,9 @@ public class Produit {
 
     public Produit(JSONObject o)
     {
-        this.nom = o.optString("nom", "Erreur");
+        this.nom = o.optString("name", "Erreur");
         this.description = o.optString("description", "Erreur");
-        this.url = o.optString("url", "Erreur");
+        this.url = o.optString("picture_url", "Erreur");
     }
 
     public String getUrl()

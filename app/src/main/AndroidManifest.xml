@@ -14,6 +14,8 @@
         <activity android:name=".ProfilActivity"/>
         <activity android:name=".RayonActivity"/>
         <activity android:name=".EpsiActivity" />
+        <activity android:name=".ProduitActivity"/>
+        <activity android:name=".DetailActivity"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

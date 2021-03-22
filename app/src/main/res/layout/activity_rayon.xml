@@ -7,10 +7,11 @@
     tools:context=".RayonActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewRayon"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

@@ -26,24 +26,23 @@ public class RayonAdapter extends RecyclerView.Adapter<RayonAdapter.ViewHolder> 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView rayonTitle;
-        private final View cardViewCategory;
+        private final View layoutCellCategorie;
 
         public ViewHolder(View view) {
             super(view);
             rayonTitle = view.findViewById(R.id.textViewTitle);
-            cardViewCategory = view.findViewById(R.id.cardViewCategory);
+            layoutCellCategorie = view.findViewById(R.id.layoutCellCategorie);
         }
 
         public TextView getRayonTitle() {
             return rayonTitle;
         }
 
-        public View getcardViewCategory() {
-            return cardViewCategory;
+        public View getLayoutCellCategorie() {
+            return layoutCellCategorie;
         }
     }
 
-    @NonNull
     @Override
     public RayonAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_cardview_rayon, viewGroup, false);
@@ -56,17 +55,17 @@ public class RayonAdapter extends RecyclerView.Adapter<RayonAdapter.ViewHolder> 
         final Rayon rayon = rayons.get(position);
         final String url = rayon.getRayonUrl();
         holder.getRayonTitle().setText(rayon.getTitle());
-            holder.getcardViewCategory().setOnClickListener(new View.OnClickListener() {
+            holder.getLayoutCellCategorie().setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ProduitActivity.displayActivity(activity, rayon.getTitle(), url);
+                    ProduitActivity.displayActivity(epsiActivity, rayon.getTitle(), url);
                 }
             });
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return rayons.size();
     }
 }
 

@@ -41,17 +41,19 @@ public class ProduitActivity extends EpsiActivity {
         ProduitAdapter produitAdapter = new ProduitAdapter(this, produits);
         recyclerView.setAdapter(produitAdapter);
 
-        String wsUrl="https://djemam.com/epsi/drink.json";
+        String url= getIntent().getExtras(
+
+                "https://djemam.com/epsi/drink.json";
 
 
-        WSCall wsCall= new WSCall(wsUrl, new WSCall.Callback() {
+        WSCall wsCall= new WSCall(url, new WSCall.Callback() {
             @Override
             public void onComplete(String result) {
                 try {
                     JSONObject jsonObject=new JSONObject(result);
-                    JSONArray jsonItems=jsonObject.getJSONArray("items");
-                    for (int i=0;i<jsonItems.length();i++){
-                        Produit produit = new Produit(jsonItems.getJSONObject(i));
+                    JSONArray jsonArray=jsonObject.getJSONArray("items");
+                    for (int i=0;i<jsonArray.length();i++){
+                        Produit produit = new Produit(jsonArray.getJSONObject(i));
                         produits.add(produit);
                     }
                     produitAdapter.notifyDataSetChanged();
