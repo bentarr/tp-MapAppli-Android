@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class RayonActivity extends EpsiActivity{
 
-    private ArrayList<Rayon> rayon = new ArrayList();
+    private ArrayList<Rayon> rayon;
 
     public static void displayActivity(HomeActivity activity, String name, String url){
         Intent intent = new Intent(activity, RayonActivity.class);
@@ -27,11 +27,13 @@ public class RayonActivity extends EpsiActivity{
         setContentView(R.layout.activity_rayon);
         setTitle("Rayon");
         showBack();
-
+/*
         RecyclerView recyclerView = findViewById(R.id.recyclerViewRayon);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         RayonAdapter rayonAdapter = new RayonAdapter(this, rayon);
     }
+
+ */
 
     String url = "https://djemam.com/epsi/categories.json";
     WSCall wsCall = new WSCall(url, new WSCall.Callback() {
@@ -46,4 +48,4 @@ public class RayonActivity extends EpsiActivity{
 
         }
     });
-}
+}}
