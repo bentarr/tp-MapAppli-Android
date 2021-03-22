@@ -21,6 +21,13 @@ public class ProduitActivity extends EpsiActivity {
 
     private ArrayList<Produit> produits;
 
+    public static void displayActivity(EpsiActivity activity, String name, String url) {
+        Intent intent = new Intent(activity, ProduitActivity.class);
+        intent.putExtra("name", name);
+        intent.putExtra("url", url);
+        activity.startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
