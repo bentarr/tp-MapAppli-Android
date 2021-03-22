@@ -34,5 +34,8 @@ public class DetailActivity extends EpsiActivity {
 
         ImageView imageView = findViewById(R.id.imageProduit);
         Picasso.get().load(url).into(imageView);
+
+        TextView textView = findViewById(R.id.Description);
+        textView.setText("Titre :  " + title);
     }
 }
