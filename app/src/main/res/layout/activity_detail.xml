@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:background="@color/md_grey_500"
+    android:background="@color/md_blue_grey_600"
     android:layout_height="fill_parent"
     >
     <LinearLayout
@@ -31,9 +31,9 @@
             android:layout_centerVertical="true"
             android:layout_marginTop="80dp"
             android:padding="10dp"
-            android:text="Title :"
+            android:text="Titre et description :"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="18dp"
             android:textStyle="bold" />
     </LinearLayout>
 
