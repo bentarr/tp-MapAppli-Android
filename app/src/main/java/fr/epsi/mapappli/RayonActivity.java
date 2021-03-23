@@ -29,8 +29,7 @@ public class RayonActivity extends EpsiActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rayon);
-        String title = getIntent().getExtras().getString("title","");
-        setTitle(title);
+        setTitle("Rayon de catégorie");
         showBack();
 
         rayonActivity = new ArrayList<>();

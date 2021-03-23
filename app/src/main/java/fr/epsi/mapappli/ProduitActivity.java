@@ -32,7 +32,7 @@ public class ProduitActivity extends EpsiActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produit);
-        setTitle("Boissons");
+        setTitle(getIntent().getExtras().getString("name"));
         showBack();
 
         produits = new ArrayList<>();
@@ -41,11 +41,7 @@ public class ProduitActivity extends EpsiActivity {
         ProduitAdapter produitAdapter = new ProduitAdapter(this, produits);
         recyclerView.setAdapter(produitAdapter);
 
-        String url= getIntent().getExtras(
-
-                "https://djemam.com/epsi/drink.json";
-
-
+        String url= getIntent().getExtras().getString("url", "");
         WSCall wsCall= new WSCall(url, new WSCall.Callback() {
             @Override
             public void onComplete(String result) {

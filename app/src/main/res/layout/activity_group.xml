@@ -21,6 +21,8 @@
 
     <Button
         android:id="@+id/bouttonTom"
+        android:background="@color/md_amber_600"
+        android:textColor="@color/black"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,6 +31,8 @@
 
     <Button
         android:id="@+id/bouttonJordan"
+        android:background="@color/md_amber_600"
+        android:textColor="@color/black"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,6 +43,8 @@
     <Button
         android:id="@+id/bouttonPaul"
         android:layout_width="wrap_content"
+        android:background="@color/md_amber_600"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
